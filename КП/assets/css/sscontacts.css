@@ -1,0 +1,36 @@
+body {
+  background-color: #222222;
+}
+
+.info-section {
+  margin: 20px 0 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #BABABA;
+}
+.info-section h1 {
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+.info-section h2 {
+  margin-bottom: 8px;
+}
+.info-section p {
+  margin-bottom: 48px;
+  color: rgb(107, 107, 107);
+}
+
+footer {
+  color: #BABABA;
+}
+
+#backtobase img {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  width: 50px;
+  height: 50px;
+  fill: #BABABA;
+}/*# sourceMappingURL=sscontacts.css.map */

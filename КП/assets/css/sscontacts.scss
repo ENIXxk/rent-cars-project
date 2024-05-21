@@ -1,0 +1,44 @@
+$base-color: #BABABA;
+$background-color: #222222;
+
+body {
+    background-color: $background-color;
+}
+
+.info-section {
+    margin: 20px 0 60px;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  
+    color: $base-color;
+  
+    h1 {
+      margin-bottom: 24px;
+      font-size: 36px;
+    }
+  
+    h2 {
+      margin-bottom: 8px;
+    }
+  
+    p {
+      margin-bottom: 48px;
+      color: rgb(107, 107, 107);
+    }
+}
+
+footer {
+    color: $base-color;
+}
+
+#backtobase img {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 50px; // Установите желаемый размер
+    height: 50px; // Установите желаемый размер
+    fill: $base-color;
+}

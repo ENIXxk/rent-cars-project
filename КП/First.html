@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда автомобилей РБ</title>
+    <link rel="stylesheet" href="assets/css/first.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        function toggleMenu() {
+            console.log("okay");
+            var nav = document.querySelector('nav');
+            if (nav.style.display === "none") {
+                nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
+        }
+        </script>
+ 
+</head>
+<body>
+
+    <header id="header">
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <li class="dropdown" id="main">
+                <button class="dropbtn" onclick="mainbutfunc('Вы на главной странице.')">
+                    Главная
+                </button>
+            </li>
+            <li class="dropdown" id="list">
+                <a href="Second.html"><button class="dropbtn">Сегмент автомобиля</button></a>
+            </li>
+            <li class="dropdown" id="brand">
+                <a href="Second.html"><button class="dropbtn">Марка автомобиля</button></a>
+            </li>
+            <li class="dropdown" id="contacts">
+                <a href="contacts.html"><button class="dropbtn">Контакты</button></a>
+            </li>
+            <li class="dropdown" id="lang">
+                <button class="dropbtn" onclick="langfunc('Установлен язык вашего региона.')">
+                    Язык
+                </button>
+            </li>
+        </nav>
+
+    </header>
+        <div class="info">
+          <div id="block"></div>
+            <img src="imgs/bmw-x6-m-automobiles-technical-data-sp-desktop.jpg" alt="">
+            <div class="text" id="bigger">АРЕНДА АВТО МИНСК</div>
+            <div class="text" id="smaller">Подберите и забронируйте свободный автомобиль</div>
+  
+        </div>
+        <div class="callus">
+        <div id="bgblock">
+            <div id="calltext">ПОЗВОНИТЕ НАМ</div>
+            <div id="phonenumber">+375332104395</div>
+            <div id="inst"><svg id="instlg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z"></path>
+                </svg>@rentalcars4real</div>
+                <div id="lg"><img id="logo" src="imgs/logo.png" alt=""></div>
+            </div>
+            
+        </div>
+        <div class="rent">
+            <div id="rentblock">
+                <figure class="steps">
+                    <legend id="steps4">АРЕНДА В 4 ШАГА</legend>
+                    <ul>
+                        <li class="listt">Подберите и забронируйте свободный автомобиль</li>
+                        <li class="listt">Укажите сроки аренды</li>
+                        <li class="listt">Выберите место аренды</li>
+                        <li class="listt">Выберите дополнительные опции</li>
+                    </ul>
+                </figure>
+                <figure class="terms">
+                    <legend id="maintm">УСЛОВИЯ АРЕНДЫ</legend>
+                    <ul>
+                        <li class="term">-Минимальный возраст 21 год</li>
+                        <li class="term">-Минимальный стаж вождения 3 года</li>
+                        <li class="term">-Наличие оригинала водительского удостоверения</li>
+                        <li class="term">-Наличие паспорта</li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+        <div class="popchoice">
+            <div id="popblock">
+                <div id="poptext">ПОПУЛЯРНЫЕ АВТОМОБИЛИ</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/audi-rs-q8-without-gasoline-particulate-filter.jpg"><figcaption class="underfig">AUDI RSQ8</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/driven-porsche-718-superJumbo.jpg"><figcaption class="underfig" id="forAudi">PORSCHE 718</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/2021_jaguar_xf_p300_awd_r_dynamic_5k-5120x2880.jpg"><figcaption class="underfig" id="forAudi">JAGUAR XF</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/1121266.jpg"><figcaption class="underfig" id="forAudi">MB E63S</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/carpixel.net-2020-range-rover-velar-svautobiography-dynamic-edition-us-98718-hd.jpg"><figcaption class="underfig" id="forAudi">RANGE ROVER VELAR</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/fonstola.ru_300579.jpg"><figcaption class="underfig" id="forAudi">BMW M5</figcaption></figure></div>
+                      <div class="swiper-slide"><figure><img class="imag" src="imgs/VAZ-Lada-2106-1920x1200.jpg"><figcaption class="underfig" id="forAudi">LADA 2106</figcaption></figure></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <a href="Second.html">
+                    <button class="toallbutn">
+                        <div id="butntitle">ПЕРЕЙТИ КО ВСЕМ АВТО</div>
+                        <svg width="90" height="12" viewBox="0 0 90 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M90 6L80.0655 0.114509L79.9358 11.6608L90 6ZM0.988765 5.99994L80.9893 6.89882L81.0118 4.89895L1.01124 4.00006L0.988765 5.99994Z" fill="#BABABA"/>
+                        </svg>                        
+                    </button>
+                </a>                
+            </div>
+        </div>
+        <div class="discount">
+            <div id="discblock">
+                <div id="disctext">НА ПЕРВЫЙ ЗАКАЗ СКИДКА -15%</div>
+                <button class="todiscbutn">
+                    <div id="butntitle">ЗАПОЛНИТЬ АНКЕТУ</div>
+                </button>
+            </div>
+        </div>
+        <footer id="footer">
+            <iframe id="footer-iframe" src="footer.xml" style="width: 115%; height: 100%; border: none; overflow: hidden;"></iframe>
+        </footer>
+        
+        
+
+<!-- Модальное окно -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="myForm">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="number">Номер телефона:</label><br>
+                <input type="text" id="number" name="number"><br>
+                <input type="submit" value="Отправить">
+            </form>            
+            </div>
+        </div>
+   
+
+        <script src="first.js"></script>
+</body>
+</html>
